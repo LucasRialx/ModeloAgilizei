@@ -43,7 +43,7 @@ p {
 header {
   background-color: #248df6;
   color: white;
-  padding: 10px 0; /* Ajustado para dar mais espaço vertical no cabeçalho */
+  padding: 25px 0; /* Ajustado para dar mais espaço vertical no cabeçalho */
   position: fixed;
   top: 0;
   left: 0;
