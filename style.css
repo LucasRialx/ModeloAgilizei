@@ -71,7 +71,7 @@ header {
 }
 
 .logo img {
-  height: 60px; /* Reduzido o tamanho da logo para ajustar a altura do cabeçalho */
+  height: 20px; /* Reduzido o tamanho da logo para ajustar a altura do cabeçalho */
   box-shadow: none; /* Remove a sombra da logo */
   width: 100%; /* Adicionado para que a logo se adapte ao tamanho da tela */
   object-fit: cover; /* Adicionado para que a logo se adapte ao tamanho da tela */
