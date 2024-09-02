@@ -1,84 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALTACA Contabilidade</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contabilidade AGILIZEI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Menu de Navegação Fixo -->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#welcome">Home</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#clients">Clientes</a></li>
-            <li><a href="#contacts">Contatos</a></li>
-        </ul>
-    </nav>
-
-    <!-- Seção de Logo -->
-    <header id="home" class="logo-section">
-        <img src="logo.jpeg" alt="Logo ALTACA Contabilidade" class="client-logo">
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#empresa">Empresa</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#principios">Princípios</a></li>
+                    <li><a href="#contato">Entre em Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <!-- Seção de Boas-vindas -->
-    <section id="welcome" class="welcome">
-        <h2>Bem-vindo à ALTACA Contabilidade!</h2>
-        <p>Na ALTACA Contabilidade, transformamos números em estratégias de sucesso! Nossa equipe dedicada e experiente está pronta para ajudar seu negócio a prosperar com soluções contábeis que vão além da simples gestão fiscal. Navegue pelo nosso site e descubra como podemos contribuir para o crescimento e a saúde financeira da sua empresa.</p>
-        <img src="imagem_uniao.png" alt="Imagem de Boas-vindas" class="fixed-size-image">
-    </section>
-
-    <!-- Seção de Serviços -->
-    <section id="services" class="services">
-        <h2>Nossos Serviços</h2>
-        <div class="service-item">
-            <img src="Imagem_negocios.jpg" alt="Consultoria Financeira" class="fixed-size-image">
-            <h3>Abertura e Encerramento de Empresas</h3>
-            <p>Transforme desafios em oportunidades de crescimento com nossa consultoria especializada. Trabalhamos lado a lado com você para criar estratégias eficazes que impulsionam seu negócio.</p>
+    <section id="home" class="hero">
+        <div class="overlay"></div> <!-- Adicione esta linha -->
+        <div class="container">
+            <h1>Excelência em nossos serviços!</h1>
+            <p>Seja bem-vindo a AGILIZEI! Aqui, você encontra uma equipe de profissionais experientes e dedicados a oferecer soluções personalizadas para as suas necessidades.</p>
         </div>
-        <div class="service-item">
-            <img src="Imagem_equipe.jpg" alt="Gestão Fiscal" class="fixed-size-image">
-            <h3>Contabilidade de Qualidade</h3>
-            <p>Deixe a complexidade da contabilidade conosco. Efetuamos a contabilidade de MEI, Contabilidade para igrejas e associações, além de cuidar dos departamentos Pessoal e Fiscal da sua empresa.</p>
-        </div>
-        <div class="service-item">
-            <img src="Imagem_imposto.jpg" alt="Planejamento Tributário" class="fixed-size-image">
-            <h3>Imposto de Renda Pessoa Fisica</h3>
-            <p>Maximize seus benefícios fiscais e minimize suas despesas como nossa declaração de IRPF a Altaca promove eficiência e economia.</p>
+    </section>    
+    <section id="empresa" class="empresa">
+        <div class="container">
+            <h2>Conheça nossa empresa</h2>
+            <p>Atuamos no mercado auxiliando as empresas, quanto a sua constituição, administração, consultorias e quando necessário, no encerramento das mesmas. Possuímos uma equipe de profissionais gabaritados nas áreas contábil, fiscal, trabalhista e de assessoria. Efetuamos um diagnóstico sobre as atividades e as rotinas da empresa, em busca de uma melhor performance na utilização de artifícios legais para redução de carga tributária (Planejamento Tributário).</p>
         </div>
     </section>
-
-    <!-- Seção de Clientes -->
-    <section id="clients" class="clients">
-        <h2>Clientes</h2>
-        <div class="client-logos">
-            <img src="teste.jpg" alt="Cliente 1" class="fixed-size-image">
-            <img src="teste.jpg" alt="Cliente 2" class="fixed-size-image">
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Alguns Serviços</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="area_contabil.jpg" alt="Área Contábil">
+                    <h3>Área Contábil</h3>
+                    <p>Assessoria de um regime mais adequado para sua empresa através da visão dos custos e fluxo de caixa.</p>
+                </div>
+                <div class="card">
+                    <img src="obrigacoes_fiscais.webp" alt="Obrigações Trabalhistas">
+                    <h3>Obrigações Trabalhistas</h3>
+                    <p>Área de relações trabalhistas, previdências, contamos com profissionais capacitados e treinados.</p>
+                </div>
+                <div class="card">
+                    <img src="assessorias.jpg" alt="Assessoria Empresarial">
+                    <h3>Assessoria Empresarial</h3>
+                    <p>Fornecendo todas as informações e suporte técnico aos departamentos já existente na empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="principios" class="principios">
+        <div class="container">
+            <h2>Conheça nossos princípios</h2>
+            <h3>Nossos Valores</h3>
+            <p>Prezamos sempre por ética, respeito e compromisso com nossos clientes e com os princípios que norteiam a contabilidade. Estamos, também, visando a humanização de nossos serviços e qualidade em nossas ações para as empresas que nos contratam.</p>
+        </div>
+    </section>
+    <section id="contato" class="escritorio">
+        <div class="container">
+            <h2>Venha para o Escritório de Contabilidade</h2>
+            <p>Escolha o Escritório de Contabilidade e dê adeus às preocupações com contabilidade.</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="number">1</div>
+                    <p>Inicie o cadastro enviando seus documentos</p>
+                </div>
+                <div class="step">
+                    <div class="number">2</div>
+                    <p>Entraremos em contato e analisaremos qual a sua necessidade</p>
+                </div>
+                <div class="step">
+                    <div class="number">3</div>
+                    <p>Nós fazemos a transferência contábil com o seu contador para você!</p>
+                </div>
+                <div class="step">
+                    <img src="check.png" alt="Check">
+                    <p>Pronto! Sua empresa sempre em dia e com uma contabilidade completa.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Seção de Contatos -->
-    <section id="contacts" class="contacts">
-        <h2>Contatos</h2>
-        <div class="contact-item">
-            <h4>Telefone / WhatsApp</h4>
-            <p><a href="https://wa.me/5531973509543" target="_blank">31 9 73509543 - Clique para falar conosco!</a></p>
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>Venha fazer uma parceria de Sucesso! Encontre em nossa empresa tudo o que precisa.</p>
+            </div>
+            <div class="footer-info">
+                <ul>
+                    <li>(49) 99142-4915</li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <ul>
+                    <li>Email: contato.agilizei@gmail.com</li>
+                    <li>Instagram: agilizei.consultoria</li>
+                    <li>TikTok: Agilizei.consultoria</li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>Copyright © 2024 Escritório de Contabilidade | Desenvolvido por LucasRialx</p>
         </div>
-        <div class="contact-item">
-            <h4>Instagram</h4>
-            <p><a href="https://www.instagram.com/altacacontabilidade?igsh=MWplYjBvdXQ4cHRnbA==" target="_blank">@altacacontabilidade</a></p>
-        </div>
-        <div class="contact-item">
-            <h4>Email</h4>
-            <p><a>altaca@altacacontabilidade.com.br</a></p>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="footer">
-        <p>&copy; 2024 ALTACA Contabilidade. Todos os direitos reservados.</p>
-        <p>Entre em contato conosco para saber como podemos ajudar sua empresa a prosperar. Na ALTACA Contabilidade, seu sucesso é nossa prioridade!</p>
     </footer>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
 </body>
 </html>
