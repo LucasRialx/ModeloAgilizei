@@ -1,119 +1,306 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth; /* Adicionado para rolagem suave */
+  box-sizing: border-box; /* Adicionado para controlar o tamanho dos elementos */
 }
 
-.navbar {
-    position: sticky; /* Torna o menu fixo quando rolar */
-    top: 0;
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-    z-index: 1000; /* Garante que o menu fique acima de outros conteúdos */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Reduzido o padding horizontal para ajuste */
+  box-sizing: border-box; /* Adicionado para controlar o tamanho dos elementos */
 }
 
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.nav-links li {
-    margin: 0 15px;
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
+.btn {
+  display: inline-block;
+  padding: 10px 20px; /* Ajuste no padding */
+  background-color: #248df6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
+.btn:hover {
+  background-color: #1a6fb2; /* Escurece o botão ao passar o mouse */
 }
 
-.logo-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('container_principal.jpg'); /* Imagem de fundo */
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    position: relative;
+/* Header styles */
+header {
+  background-color: #248df6;
+  color: white;
+  padding: 25px 0; /* Ajustado para dar mais espaço vertical no cabeçalho */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Alinha a logo à esquerda e o menu à direita */
 }
 
-.logo-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Cor de fundo com opacidade */
-    z-index: 0;
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinha a logo à esquerda e o menu à direita */
+  max-width: 1200px; /* Mantém a largura máxima do container do cabeçalho */
+  margin: 0 auto;
+  padding: 0 20px; /* Padding horizontal ajustado para manter o conteúdo centralizado */
+  box-sizing: border-box; /* Adicionado para controlar o tamanho dos elementos */
 }
 
-.client-logo {
-    width: 700px;   /* Defina a largura específica */
-    height: 150px;  /* Defina a altura específica */
-    object-fit: cover; /* Mantém a proporção da imagem dentro das dimensões definidas */
-    border-radius: 25px; /* Arredonda as bordas da imagem */
-    position: relative; /* Necessário para sobrepor o pseudo-elemento */
-    z-index: 1; /* Garante que a logo fique acima da imagem de fundo */
+/* Ajuste do tamanho da logo */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Adicionado para dar mais espaço entre a logo e o menu */
 }
 
-.welcome, .services, .clients, .contacts, .footer {
-    padding: 60px 20px;
-    text-align: center;
+.logo img {
+  height: 20px; /* Reduzido o tamanho da logo para ajustar a altura do cabeçalho */
+  box-shadow: none; /* Remove a sombra da logo */
+  width: 100%; /* Adicionado para que a logo se adapte ao tamanho da tela */
+  object-fit: cover; /* Adicionado para que a logo se adapte ao tamanho da tela */
 }
 
-.fixed-size-image {
-    max-width: 200px;
-    height: auto;
+/* Estilo do menu */
+nav {
+  flex-grow: 1; /* Permite que o menu ocupe o espaço restante */
+  display: flex;
+  justify-content: space-between; /* Centraliza os itens do menu horizontalmente */
 }
 
-.services .service-item {
-    display: inline-block;
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Adicionado para que os itens do menu sejam exibidos em linha */
 }
 
-.clients .client-logos img {
-    max-width: 150px;
-    margin: 10px;
+nav li {
+  margin: 0 15px; /* Espaçamento entre os itens do menu */
 }
 
-.contacts .contact-item {
-    margin-bottom: 30px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; /* Ajuste o tamanho da fonte dos links se necessário */
+  line-height: 1.5; /* Ajuste o line-height para melhorar o espaçamento vertical */
 }
 
-.contacts a {
-    color: #081f1b;
-    text-decoration: none;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.contacts a:hover {
-    text-decoration: underline;
+/* Hero section styles */
+.hero {
+  position: relative;
+  background-image: url('container_principal.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 60px; /* Adiciona uma margem superior para compensar o cabeçalho fixo */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo da seção hero */
+  align-items: center;
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* Overlay styles */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-.footer p {
-    margin: 0;
-    font-size: 14px;
+/* Container styles to ensure text is above the overlay */
+.hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px; /* Mantém a largura máxima do container da seção hero */
+  margin: 0 auto;
+  padding: 0 20px; /* Padding horizontal ajustado para manter o conteúdo centralizado */
+  box-sizing: border-box; /* Adicionado para controlar o tamanho dos elementos */
 }
+
+/* Empresa section styles */
+.empresa {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo da seção empresa */
+  align-items: center;
+}
+
+/* Serviços section styles */
+.servicos {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo da seção serviços */
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Adicionado para que os cards sejam exibidos em linha */
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+  box-sizing: border-box; /* Adicionado para controlar o tamanho dos elementos */
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Princípios section styles */
+.principios {
+  padding: 50px 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo da seção princípios */
+  align-items: center;
+}
+
+/* Escritório section styles */
+.escritorio {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo da seção escritório */
+  align-items: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Adicionado para que os steps sejam exibidos em linha */
+}
+
+.step {
+  width: calc(25% - 20px);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box; /* Adicionado para controlar o tamanho dos elementos */
+}
+
+.step .number {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Image specific styles */
+.step img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #248df6;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo do rodapé */
+  align-items: center;
+}
+
+.footer-info {
+  margin-bottom: 20px;
+}
+
+.footer-info .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info .logo img {
+  height: 40px;
+  box-shadow: none;
+  width: 100%; /* Adicionado para que a logo se adapte ao tamanho da tela */
+  object-fit: cover; /* Adicionado para que a logo se adapte ao tamanho da tela */
+}
+
+.footer-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-info li {
+  margin-bottom: 5px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+.social-media a:hover {
+  color: #fff;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .hero {
+    padding: 50px 0;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: calc(50% - 20px);
+  }
+  .steps {
+    flex-wrap
