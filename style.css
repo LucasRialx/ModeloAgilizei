@@ -1,0 +1,305 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #248df6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #1a6fb2;
+}
+
+/* Header styles */
+header {
+  background-color: #248df6;
+  color: white;
+  padding: 15px 0; /* Ajustado para o cabeçalho */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  justify-content: space-between; /* Espaça a logo e o menu para os extremos */
+}
+
+/* Estilo da logo */
+.logo {
+  margin-right: auto; /* Faz com que a logo fique alinhada à esquerda */
+}
+
+/* Ajuste da altura da logo no cabeçalho */
+.logo img {
+  height: 60px; /* Ajuste a altura conforme necessário */
+  max-height: 60px; /* Define um limite máximo para a altura */
+  width: auto; /* Mantém a proporção da logo */
+  object-fit: contain; /* Garante que a logo se ajuste ao container */
+}
+
+/* Responsividade da logo */
+@media (max-width: 768px) {
+  .logo img {
+    height: 30px; /* Ajusta a altura da logo em telas menores */
+  }
+}
+
+/* Estilo do menu */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero {
+  position: relative;
+  background-image: url('container_principal.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay styles */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Container styles to ensure text is above the overlay */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Empresa section styles */
+.empresa {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.empresa p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilo da caixa cinza na seção empresa */
+.empresa-box {
+  background-color: #e5e1ec; /* Cor cinza clara */
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 800px; /* Largura máxima */
+  margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+
+/* Serviços section styles */
+.servicos {
+  padding: 50px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0;
+}
+
+.card p {
+  padding: 0 20px 20px;
+}
+
+/* Princípios section styles */
+.principios {
+  background: url('principios.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 50px 0;
+  color: white;
+}
+
+.principios-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.principios-text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Contato section styles */
+.contatos {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info i {
+  margin-right: 8px;
+}
+
+/* Cor padrão dos links */
+a {
+  color: #248df6; /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+a:hover {
+  color: #1a6fb2; /* Cor dos links ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Footer styles */
+footer {
+  background-color: #248df6;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
+.social-media {
+  margin-top: 15px;
+}
+
+.social-media a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #1a6fb2;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  .principios-content {
+    flex-direction: column;
+  }
+
+  .principios-text {
+    padding-left: 0;
+  }
+}
