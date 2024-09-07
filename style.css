@@ -304,3 +304,47 @@ footer {
     padding-left: 0;
   }
 }
+
+/* Reduz a altura do cabeçalho em telas menores */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 0; /* Reduz o padding no cabeçalho */
+  }
+
+  .logo img {
+    height: 40px; /* Reduz o tamanho da logo */
+  }
+
+  nav ul {
+    display: none; /* Esconde o menu em telas pequenas */
+  }
+
+  .menu-toggle {
+    display: block; /* Exibe o ícone do menu em telas menores */
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-opened ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #248df6;
+    width: 100%;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Estilo para o ícone do menu "hambúrguer" */
+.menu-toggle {
+  display: none; /* Inicialmente escondido */
+}
+
+/* Exibe o menu quando aberto */
+.menu-opened nav ul {
+  display: block;
+}
