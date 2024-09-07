@@ -51,6 +51,7 @@ header {
   z-index: 1000;
   display: flex;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra sutil */
 }
 
 .header-inner {
@@ -61,7 +62,6 @@ header {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  justify-content: space-between; /* Espaça a logo e o menu para os extremos */
 }
 
 /* Estilo da logo */
@@ -164,7 +164,6 @@ nav a:hover {
   max-width: 800px; /* Largura máxima */
   margin: 0 auto; /* Centralizar horizontalmente */
 }
-
 
 /* Serviços section styles */
 .servicos {
@@ -283,16 +282,18 @@ footer {
 @media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Alinha itens ao centro em telas menores */
   }
 
   nav ul {
     flex-direction: column;
+    width: 100%; /* Ocupa toda a largura disponível */
+    text-align: center; /* Alinha o texto ao centro */
     margin-top: 15px;
   }
 
   nav li {
-    margin: 5px 0;
+    margin: 10px 0; /* Aumenta o espaçamento entre os itens do menu */
   }
 
   .principios-content {
